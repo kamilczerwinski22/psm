@@ -19,15 +19,15 @@
         <form>
             <div class="form-group">
               <label for="inputName">Imię</label>
-              <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+              <input type="text" class="form-control" id="inputName" placeholder="Podaj imię">
             </div>
             <div class="form-group">
                 <label for="inputSurname">Nazwisko</label>
-                <input type="text" class="form-control" id="inputSurname" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="inputSurname" placeholder="Podaj nazwisko"">
               </div>
               <div class="form-group">
-                <label for="inputEmail">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <label for="inputEmail">Adres e-mail</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="imie@firma.com">
               </div>
               <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="student">
@@ -38,19 +38,23 @@
                 <label class="form-check-label" for="pracownik">Pracownik</label>
               </div>
               <div class="form-group">
-                <label for="inputZajecia">Rodzaje zajęć</label>
-                <select class="form-control" id="inputZajecia">
-                  <option>badminton</option>
-                  <option>siatkówka</option>
-                  <option>basen</option>
-                </select>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    Wybór sportów
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">badminton</a>
+                    <a class="dropdown-item" href="#">siatkówka</a>
+                    <a class="dropdown-item" href="#">basen</a>
+                  </div>
+                </div>
               </div>
               <div class="form-group">
                 <label for="inputTextArea">Uwagi</label>
                 <textarea class="form-control" id="inputTextArea" rows="3"></textarea>
               </div>
 
-            <button type="submit" class="btn btn-primary">Zarejestruj</button>
+            <button type="submit" class="btn btn-secondary">Zarejestruj</button>
           </form>
     </div>
 
