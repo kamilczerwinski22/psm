@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wizytówka</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container container-fluid">
+          <h1 class="display-4">Formularz zapisu na zajęcia sportowe</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+              <label for="inputName">Imię</label>
+              <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="inputSurname">Nazwisko</label>
+                <input type="text" class="form-control" id="inputSurname" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="student">
+                <label class="form-check-label" for="student">Student</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="pracownik">
+                <label class="form-check-label" for="pracownik">Pracownik</label>
+              </div>
+              <div class="form-group">
+                <label for="inputZajecia">Rodzaje zajęć</label>
+                <select class="form-control" id="inputZajecia">
+                  <option>badminton</option>
+                  <option>siatkówka</option>
+                  <option>basen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputTextArea">Uwagi</label>
+                <textarea class="form-control" id="inputTextArea" rows="3"></textarea>
+              </div>
+
+            <button type="submit" class="btn btn-primary">Zarejestruj</button>
+          </form>
+    </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
